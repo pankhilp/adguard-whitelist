@@ -1,0 +1,24 @@
+[Adblock Plus 2.0]
+! Title: My Personal Banking Whitelist
+! Last Modified: 2026-01-17
+! Homepage: https://github.com/yourusername/yourrepo
+
+! --- ICICI Bank ---
+@@||icici.bank.in^
+@@||icicibank.com^
+
+! --- RBC ---
+@@||rbc.com^
+@@||rbc.ca^
+
+! --- Wealthsimple ---
+@@||wealthsimple.com^
+
+! --- Neo Financial ---
+@@||neofinancial.com^
+
+! --- PC Financial ---
+@@||pcfinancial.ca^
+@@||pcmastercard.ca^
+@@||pcoptimum.ca^
+@@||pcmobile.ca^
