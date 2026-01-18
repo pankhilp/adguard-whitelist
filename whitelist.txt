@@ -18,12 +18,6 @@
 @@||icicibank.com^
 @@||icicidirect.com^
 
-! --- Zodiac / Zodia (Financial & Institutional) ---
-@@||zodiac.com^
-@@||zodiamarkets.com^
-@@||zodia.io^
-@@||zodiacenergy.com^
-
 ! --- RBC Canada ---
 @@||rbc.com^
 @@||rbc.ca^
