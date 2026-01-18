@@ -1,24 +1,44 @@
 [Adblock Plus 2.0]
-! Title: My Personal Banking Whitelist
+! Title: My Personal Banking & Financial Whitelist
 ! Last Modified: 2026-01-17
-! Homepage: https://github.com/yourusername/yourrepo
+! Includes: ICICI, HDFC, RBC, Wealthsimple, Neo, PC Financial, Zodia/Zodiac
 
-! --- ICICI Bank ---
+! --- HDFC Bank India (All Domains) ---
+@@||hdfcbank.com^
+@@||hdfcbank.bank.in^
+@@||hdfcbank^
+@@||hdfc.com^
+@@||hdfcergo.com^
+@@||hdfclife.com^
+@@||hdfcfund.com^
+@@||smartbuy.hdfcbank.com^
+
+! --- ICICI Bank India ---
 @@||icici.bank.in^
 @@||icicibank.com^
+@@||icicidirect.com^
 
-! --- RBC ---
+! --- Zodiac / Zodia (Financial & Institutional) ---
+@@||zodiac.com^
+@@||zodiamarkets.com^
+@@||zodia.io^
+@@||zodiacenergy.com^
+
+! --- RBC Canada ---
 @@||rbc.com^
 @@||rbc.ca^
+@@||rbcroyalbank.com^
 
-! --- Wealthsimple ---
+! --- Wealthsimple Canada ---
 @@||wealthsimple.com^
+@@||braze.com^
 
-! --- Neo Financial ---
+! --- Neo Financial Canada ---
 @@||neofinancial.com^
+@@||neo.cc^
 
-! --- PC Financial ---
+! --- PC Financial & PC Mobile ---
 @@||pcfinancial.ca^
-@@||pcmastercard.ca^
 @@||pcoptimum.ca^
+@@||pcmastercard.ca^
 @@||pcmobile.ca^
