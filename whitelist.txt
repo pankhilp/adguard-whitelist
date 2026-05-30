@@ -36,3 +36,29 @@
 @@||pcoptimum.ca^
 @@||pcmastercard.ca^
 @@||pcmobile.ca^
+
+! --- GNOME Software / AppStream / Flathub ---
+@@||flathub.org^
+@@||dl.flathub.org^
+@@||cdn.flathub.org^
+@@||appstream.flathub.org^
+
+! --- Freedesktop AppStream ---
+@@||appstream.freedesktop.org^
+
+! --- GNOME Infrastructure ---
+@@||gnome.org^
+@@||download.gnome.org^
+
+! --- Common Icon & Screenshot Sources ---
+@@||githubusercontent.com^
+@@||raw.githubusercontent.com^
+@@||gitlabusercontent.com^
+
+! --- Fedora AppStream ---
+@@||fedoraproject.org^
+@@||apps.fedoraproject.org^
+
+! --- Ubuntu / Canonical ---
+@@||ubuntu.com^
+@@||canonical.com^
