@@ -1,64 +1,345 @@
 [Adblock Plus 2.0]
-! Title: My Personal Banking & Financial Whitelist
-! Last Modified: 2026-01-17
-! Includes: ICICI, HDFC, RBC, Wealthsimple, Neo, PC Financial, Zodia/Zodiac
+! Title: Comprehensive Canadian Banking & Authenticator Whitelist
+! Description: Complete whitelist for RBC, Neo Financial, Scotiabank, Koho, Affirm + Proton & Microsoft Authenticators
+! Updated: 2026-08-14
+! Coverage: Web, Mobile Apps, APIs, CDNs, Regional Infrastructure
 
-! --- HDFC Bank India (All Domains) ---
-@@||hdfcbank.com^
-@@||hdfcbank.bank.in^
-@@||hdfcbank^
-@@||hdfc.com^
-@@||hdfcergo.com^
-@@||hdfclife.com^
-@@||hdfcfund.com^
-@@||smartbuy.hdfcbank.com^
+! ============================================
+! === RBC ROYAL BANK OF CANADA (All Infrastructure) ===
+! ============================================
 
-! --- ICICI Bank India ---
-@@||icici.bank.in^
-@@||icicibank.com^
-@@||icicidirect.com^
-
-! --- RBC Canada ---
+! Main domains
 @@||rbc.com^
 @@||rbc.ca^
 @@||rbcroyalbank.com^
+@@||rbcroyalbank.ca^
 
-! --- Wealthsimple Canada ---
-@@||wealthsimple.com^
-@@||braze.com^
+! Web banking
+@@||online.rbc.com^
+@@||online.rbc.ca^
+@@||secure.rbc.com^
+@@||secure.rbc.ca^
 
-! --- Neo Financial Canada ---
+! Mobile app infrastructure
+@@||mobile.rbc.com^
+@@||mobile.rbc.ca^
+@@||app.rbc.com^
+@@||app.rbc.ca^
+
+! API endpoints
+@@||api.rbc.com^
+@@||api.rbc.ca^
+@@||api-ca.rbc.ca^
+@@||secure-api.rbc.com^
+@@||secure-api.rbc.ca^
+
+! RBC Digital / Investment platforms
+@@||rbcdigital.com^
+@@||rbcdigital.ca^
+@@||rbcinvest.ca^
+@@||rbcgam.com^
+
+! Cards / Credit
+@@||cards.rbc.com^
+@@||cards.rbc.ca^
+@@||credit.rbc.ca^
+@@||rbccard.com^
+@@||rbccard.ca^
+
+! CDN / Infrastructure (Akamai, Cloudflare)
+@@||rbc-cdn.com^
+@@||rbc-cdn.ca^
+@@||d.rbc.ca^
+@@||cdn-rbc.ca^
+@@||*.rbc-cdn.com^
+@@||*.rbc-cdn.ca^
+
+! Wildcard for all RBC subdomains
+@@||*.rbc.com^
+@@||*.rbc.ca^
+@@||*.rbcroyalbank.com^
+@@||*.rbcroyalbank.ca^
+
+! ============================================
+! === NEO FINANCIAL (All Infrastructure) ===
+! ============================================
+
 @@||neofinancial.com^
 @@||neo.cc^
 
-! --- PC Financial & PC Mobile ---
-@@||pcfinancial.ca^
-@@||pcoptimum.ca^
-@@||pcmastercard.ca^
-@@||pcmobile.ca^
+! App infrastructure
+@@||api.neofinancial.com^
+@@||api-ca.neofinancial.com^
+@@||app.neofinancial.com^
+@@||mobile.neofinancial.com^
+@@||mobile.neo.cc^
 
-! --- GNOME Software / AppStream / Flathub ---
-@@||flathub.org^
-@@||dl.flathub.org^
-@@||cdn.flathub.org^
-@@||appstream.flathub.org^
+! Web banking
+@@||login.neofinancial.com^
+@@||secure.neofinancial.com^
+@@||online.neofinancial.com^
 
-! --- Freedesktop AppStream ---
-@@||appstream.freedesktop.org^
+! CDN / Infrastructure
+@@||cdn.neofinancial.com^
+@@||img.neofinancial.com^
 
-! --- GNOME Infrastructure ---
-@@||gnome.org^
-@@||download.gnome.org^
+! Wildcard
+@@||*.neofinancial.com^
+@@||*.neo.cc^
 
-! --- Common Icon & Screenshot Sources ---
-@@||githubusercontent.com^
-@@||raw.githubusercontent.com^
-@@||gitlabusercontent.com^
+! ============================================
+! === SCOTIABANK (All Infrastructure) ===
+! ============================================
 
-! --- Fedora AppStream ---
-@@||fedoraproject.org^
-@@||apps.fedoraproject.org^
+@@||scotiabank.com^
+@@||scotiabank.ca^
+@@||scotiabank.co.uk^
 
-! --- Ubuntu / Canonical ---
-@@||ubuntu.com^
-@@||canonical.com^
+! Web banking
+@@||online.scotiabank.com^
+@@||online.scotiabank.ca^
+@@||secure.scotiabank.ca^
+@@||mybank.scotiabank.com^
+@@||mybank.scotiabank.ca^
+
+! Mobile app infrastructure
+@@||mobile.scotiabank.com^
+@@||mobile.scotiabank.ca^
+@@||app.scotiabank.ca^
+@@||mobilebanking.scotiabank.ca^
+
+! API endpoints
+@@||api.scotiabank.com^
+@@||api.scotiabank.ca^
+@@||api-ca.scotiabank.ca^
+@@||banking-api.scotiabank.ca^
+
+! Investment / Credit
+@@||scotiainvestments.com^
+@@||scotiainvest.ca^
+@@||mortgages.scotiabank.ca^
+@@||credit.scotiabank.ca^
+
+! CDN / Infrastructure
+@@||cdn.scotiabank.ca^
+@@||static.scotiabank.ca^
+@@||img.scotiabank.ca^
+
+! Wildcard
+@@||*.scotiabank.com^
+@@||*.scotiabank.ca^
+
+! ============================================
+! === KOHO (All Infrastructure) ===
+! ============================================
+
+@@||koho.com^
+@@||koho.ca^
+
+! App infrastructure
+@@||api.koho.com^
+@@||api.koho.ca^
+@@||app.koho.ca^
+@@||mobile.koho.ca^
+@@||app-api.koho.ca^
+
+! Web/Login
+@@||login.koho.ca^
+@@||login.koho.com^
+@@||secure.koho.ca^
+@@||web.koho.ca^
+
+! CDN / Infrastructure
+@@||cdn.koho.ca^
+@@||cdn.koho.com^
+@@||img.koho.ca^
+@@||static.koho.ca^
+
+! Wildcard
+@@||*.koho.com^
+@@||*.koho.ca^
+
+! ============================================
+! === AFFIRM (All Infrastructure) ===
+! ============================================
+
+@@||affirm.com^
+@@||affirm.ca^
+
+! API infrastructure
+@@||api.affirm.com^
+@@||api.affirm.ca^
+@@||checkout.affirm.com^
+
+! CDN / Assets
+@@||cdn.affirm.com^
+@@||static.affirm.com^
+@@||img.affirm.com^
+@@||d.affirm.com^
+@@||js.affirm.com^
+
+! Analytics / Tracking (required for Affirm to function)
+@@||analytics.affirm.com^
+@@||events.affirm.com^
+
+! Wildcard
+@@||*.affirm.com^
+@@||*.affirm.ca^
+
+! ============================================
+! === PAYMENT PROCESSORS (Required by banks/fintech) ===
+! ============================================
+
+! Stripe (used by Neo, Koho, Affirm, others)
+@@||stripe.com^
+@@||stripe.network^
+@@||stripe.cc^
+@@||api.stripe.com^
+@@||q.stripe.com^
+@@||js.stripe.com^
+@@||checkout.stripe.com^
+@@||api-ca.stripe.com^
+@@||*.stripe.com^
+
+! Adyen (backup processor)
+@@||adyen.com^
+@@||api.adyen.com^
+@@||*.adyen.com^
+
+! Square / Block
+@@||square.com^
+@@||api.square.com^
+@@||*.square.com^
+
+! ============================================
+! === PROTON AUTHENTICATOR ===
+! ============================================
+
+! Main API
+@@||protonmail.com^
+@@||proton.me^
+
+! Authentication endpoints
+@@||api.protonmail.com^
+@@||api.proton.me^
+@@||auth.proton.me^
+@@||auth-v2.proton.me^
+@@||auth-ca.proton.me^
+@@||auth-us.proton.me^
+
+! Authenticator specific
+@@||authenticator.proton.me^
+@@||api-authenticator.proton.me^
+
+! Regional endpoints (Canada)
+@@||mail-ca.proton.me^
+@@||vpn-ca.proton.me^
+@@||api-ca.proton.me^
+
+! OAuth / Session
+@@||oauth.proton.me^
+@@||session.proton.me^
+
+! CDN / Static assets
+@@||cdn.proton.me^
+@@||static.proton.me^
+@@||img.proton.me^
+
+! Mail endpoints
+@@||mail.proton.me^
+@@||mailbox.proton.me^
+
+! Wildcard
+@@||*.protonmail.com^
+@@||*.proton.me^
+
+! ============================================
+! === MICROSOFT AUTHENTICATOR & IDENTITY ===
+! ============================================
+
+! Login / Authentication
+@@||login.microsoft.com^
+@@||login.live.com^
+@@||account.microsoft.com^
+@@||account.live.com^
+
+! Azure AD / Identity
+@@||login.microsoftonline.com^
+@@||aad.msftauth.net^
+@@||aadcdn.msftauth.net^
+@@||msftauth.net^
+@@||*.msftauth.net^
+
+! Microsoft Graph (API backend)
+@@||graph.microsoft.com^
+@@||graph.microsoft.com^
+
+! OAuth / Token endpoints
+@@||oauth.microsoft.com^
+@@||token.microsoft.com^
+
+! Authenticator app
+@@||authenticator.microsoft.com^
+@@||mfa.microsoft.com^
+@@||aka.ms^
+
+! CDN / Assets
+@@||cdn.microsoft.com^
+@@||static.microsoft.com^
+@@||img-s-msn-com.akamaized.net^
+
+! Regional infrastructure
+@@||*.microsoft.com^
+@@||*.live.com^
+@@||*.microsoftonline.com^
+@@||*.msftauth.net^
+
+! ============================================
+! === SUPPORTING INFRASTRUCTURE ===
+! ============================================
+
+! CloudFlare (CDN used by many fintech)
+@@||cloudflare.com^
+@@||cdn.cloudflare.com^
+
+! Akamai (CDN used by RBC, banks)
+@@||akamai.com^
+@@||akamaized.net^
+@@||akamaitech.net^
+
+! AWS infrastructure (used by most fintech)
+@@||amazonaws.com^
+@@||cloudfront.net^
+@@||elasticloadbalancing.amazonaws.com^
+
+! Fastly (CDN)
+@@||fastly.com^
+@@||fastly.net^
+
+! Analytics / Monitoring (necessary for app stability)
+@@||braze.com^
+@@||segment.com^
+@@||sentry.io^
+
+! Certificate validation
+@@||ocsp.digicert.com^
+@@||crl.digicert.com^
+
+! ============================================
+! === NOTES ===
+! ============================================
+! This whitelist assumes:
+! 1. AdGuard DNS filter is your primary blocklist (160k rules)
+! 2. You have NOT enabled malware/phishing lists (URLhaus)
+! 3. Regional Canadian endpoints included
+! 4. Wildcard rules prevent future subdomain breakage
+! 5. Payment processors included (Stripe, Adyen, Square)
+! 6. CDN infrastructure whitelisted to prevent edge caching issues
+!
+! STILL INCOMPLETE FOR:
+! - Regional payment gateways (may need additions based on your usage)
+! - Specific retailer infrastructure (e.g., if Affirm is used on Shopify stores)
+! - Banking-specific security checks (anti-fraud services)
+!
+! ACTION: Export AdGuard query logs after 7 days. Compare blocked domains to this list.
+! Missing domains = update this list. Recurring misses = agent automation needed.
