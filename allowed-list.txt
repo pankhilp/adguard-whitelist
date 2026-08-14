@@ -13,7 +13,7 @@
 @@||rbc.ca^
 @@||rbcroyalbank.com^
 @@||rbcroyalbank.ca^
-@@||rbc.online-metrix.net
+@@||rbc.online-metrix.net^
 
 ! Web banking
 @@||online.rbc.com^
@@ -263,6 +263,7 @@
 @@||login.live.com^
 @@||account.microsoft.com^
 @@||account.live.com^
+@@||events.data.microsoft.com^
 
 ! Azure AD / Identity
 @@||login.microsoftonline.com^
