@@ -345,6 +345,21 @@
 @@||completion.amazon.com^
 @@||completion.amazon.in^
 
+! --- Mobile App Specific Endpoints ---
+@@||device-metrics-us-2.amazon.com^
+@@||device-metrics-us.amazon.com^
+@@||unagi-na.amazon.com^
+@@||unagi.amazon.com^
+@@||s3.amazonaws.com^$domain=amazon.ca|amazon.com|amazon.in
+@@||m.media-amazon.com^
+@@||images-na.ssl-images-amazon.com^
+
+! --- Mobile Ad Services & Content Delivery ---
+@@||aax-us.amazon-adsystem.com^
+@@||aax-fe.amazon-adsystem.com^
+@@||aax-eu.amazon-adsystem.com^
+@@||api.amazon.com^
+
 
 ! ============================================
 ! === NOTES ===
