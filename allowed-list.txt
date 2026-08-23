@@ -327,6 +327,25 @@
 @@||ocsp.digicert.com^
 @@||crl.digicert.com^
 
+
+! --- Global Amazon Ad Network (Handles links & tracking) ---
+@@||amazon-adsystem.com^
+@@||aax.amazon-adsystem.com^
+@@||aax-us-east.amazon-adsystem.com^
+@@||aax-us-pdx.amazon-adsystem.com^
+@@||aax-eu.amazon-adsystem.com^
+@@||s.amazon-adsystem.com^
+@@||assoc-amazon.com^
+@@||mads.amazon-adsystem.com^
+
+! --- Regional Ad Redirection & DoubleClick Exceptions ---
+@@||ad.doubleclick.net^$domain=amazon.com|amazon.ca|amazon.in
+@@||fls-na.amazon.com^
+@@||fls-eu.amazon.com^
+@@||completion.amazon.com^
+@@||completion.amazon.in^
+
+
 ! ============================================
 ! === NOTES ===
 ! ============================================
