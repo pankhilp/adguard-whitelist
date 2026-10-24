@@ -361,23 +361,30 @@ adblock filter list
 360| @@||aax-eu.amazon-adsystem.com^
 361| @@||api.amazon.com^
 362| 
-363| 
-364| ! ============================================
-365| ! === NOTES ===
-366| ! ============================================
-367| ! This whitelist assumes:
-368| ! 1. AdGuard DNS filter is your primary blocklist (160k rules)
-369| ! 2. You have NOT enabled malware/phishing lists (URLhaus)
-370| ! 3. Regional Canadian endpoints included
-371| ! 4. Wildcard rules prevent future subdomain breakage
-372| ! 5. Payment processors included (Stripe, Adyen, Square)
-373| ! 6. CDN infrastructure whitelisted to prevent edge caching issues
-374| !
-375| ! STILL INCOMPLETE FOR:
-376| ! - Regional payment gateways (may need additions based on your usage)
-377| ! - Specific retailer infrastructure (e.g., if Affirm is used on Shopify stores)
-378| ! - Banking-specific security checks (anti-fraud services)
-379| !
-380| ! ACTION: Export AdGuard query logs after 7 days. Compare blocked domains to this list.
-381| ! Missing domains = update this list. Recurring misses = agent automation needed.
-382| 
+363| ! ============================================
+364| ! === STARTPAGE SEARCH ===
+365| ! ============================================
+366| ! Search engine and related front-end domains
+367| @@||startpage.com^
+368| @@||www.startpage.com^
+369| @@||*.startpage.com^
+370| 
+371| ! ============================================
+372| ! === NOTES ===
+373| ! ============================================
+374| ! This whitelist assumes:
+375| ! 1. AdGuard DNS filter is your primary blocklist (160k rules)
+376| ! 2. You have NOT enabled malware/phishing lists (URLhaus)
+377| ! 3. Regional Canadian endpoints included
+378| ! 4. Wildcard rules prevent future subdomain breakage
+379| ! 5. Payment processors included (Stripe, Adyen, Square)
+380| ! 6. CDN infrastructure whitelisted to prevent edge caching issues
+381| !
+382| ! STILL INCOMPLETE FOR:
+383| ! - Regional payment gateways (may need additions based on your usage)
+384| ! - Specific retailer infrastructure (e.g., if Affirm is used on Shopify stores)
+385| ! - Banking-specific security checks (anti-fraud services)
+386| !
+387| ! ACTION: Export AdGuard query logs after 7 days. Compare blocked domains to this list.
+388| ! Missing domains = update this list. Recurring misses = agent automation needed.
+389| 
