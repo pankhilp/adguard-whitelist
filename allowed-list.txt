@@ -1,381 +1,383 @@
-[Adblock Plus 2.0]
-! Title: Comprehensive Canadian Banking & Authenticator Whitelist
-! Description: Complete whitelist for RBC, Neo Financial, Scotiabank, Koho, Affirm + Proton & Microsoft Authenticators
-! Updated: 2026-08-14
-! Coverage: Web, Mobile Apps, APIs, CDNs, Regional Infrastructure
-
-! ============================================
-! === RBC ROYAL BANK OF CANADA (All Infrastructure) ===
-! ============================================
-
-! Main domains
-@@||rbc.com^
-@@||rbc.ca^
-@@||rbcroyalbank.com^
-@@||rbcroyalbank.ca^
-@@||rbc.online-metrix.net^
-
-! Web banking
-@@||online.rbc.com^
-@@||online.rbc.ca^
-@@||secure.rbc.com^
-@@||secure.rbc.ca^
-
-! Mobile app infrastructure
-@@||mobile.rbc.com^
-@@||mobile.rbc.ca^
-@@||app.rbc.com^
-@@||app.rbc.ca^
-
-! API endpoints
-@@||api.rbc.com^
-@@||api.rbc.ca^
-@@||api-ca.rbc.ca^
-@@||secure-api.rbc.com^
-@@||secure-api.rbc.ca^
-
-! RBC Digital / Investment platforms
-@@||rbcdigital.com^
-@@||rbcdigital.ca^
-@@||rbcinvest.ca^
-@@||rbcgam.com^
-
-! Cards / Credit
-@@||cards.rbc.com^
-@@||cards.rbc.ca^
-@@||credit.rbc.ca^
-@@||rbccard.com^
-@@||rbccard.ca^
-
-! CDN / Infrastructure (Akamai, Cloudflare)
-@@||rbc-cdn.com^
-@@||rbc-cdn.ca^
-@@||d.rbc.ca^
-@@||cdn-rbc.ca^
-@@||*.rbc-cdn.com^
-@@||*.rbc-cdn.ca^
-
-! Wildcard for all RBC subdomains
-@@||*.rbc.com^
-@@||*.rbc.ca^
-@@||*.rbcroyalbank.com^
-@@||*.rbcroyalbank.ca^
-
-! ============================================
-! === NEO FINANCIAL (All Infrastructure) ===
-! ============================================
-
-@@||neofinancial.com^
-@@||neo.cc^
-
-! App infrastructure
-@@||api.neofinancial.com^
-@@||api-ca.neofinancial.com^
-@@||app.neofinancial.com^
-@@||mobile.neofinancial.com^
-@@||mobile.neo.cc^
-
-! Web banking
-@@||login.neofinancial.com^
-@@||secure.neofinancial.com^
-@@||online.neofinancial.com^
-
-! CDN / Infrastructure
-@@||cdn.neofinancial.com^
-@@||img.neofinancial.com^
-
-! Wildcard
-@@||*.neofinancial.com^
-@@||*.neo.cc^
-
-! ============================================
-! === SCOTIABANK (All Infrastructure) ===
-! ============================================
-
-@@||scotiabank.com^
-@@||scotiabank.ca^
-@@||scotiabank.co.uk^
-
-! Web banking
-@@||online.scotiabank.com^
-@@||online.scotiabank.ca^
-@@||secure.scotiabank.ca^
-@@||mybank.scotiabank.com^
-@@||mybank.scotiabank.ca^
-
-! Mobile app infrastructure
-@@||mobile.scotiabank.com^
-@@||mobile.scotiabank.ca^
-@@||app.scotiabank.ca^
-@@||mobilebanking.scotiabank.ca^
-
-! API endpoints
-@@||api.scotiabank.com^
-@@||api.scotiabank.ca^
-@@||api-ca.scotiabank.ca^
-@@||banking-api.scotiabank.ca^
-
-! Investment / Credit
-@@||scotiainvestments.com^
-@@||scotiainvest.ca^
-@@||mortgages.scotiabank.ca^
-@@||credit.scotiabank.ca^
-
-! CDN / Infrastructure
-@@||cdn.scotiabank.ca^
-@@||static.scotiabank.ca^
-@@||img.scotiabank.ca^
-
-! Wildcard
-@@||*.scotiabank.com^
-@@||*.scotiabank.ca^
-
-! ============================================
-! === KOHO (All Infrastructure) ===
-! ============================================
-
-@@||koho.com^
-@@||koho.ca^
-
-! App infrastructure
-@@||api.koho.com^
-@@||api.koho.ca^
-@@||app.koho.ca^
-@@||mobile.koho.ca^
-@@||app-api.koho.ca^
-
-! Web/Login
-@@||login.koho.ca^
-@@||login.koho.com^
-@@||secure.koho.ca^
-@@||web.koho.ca^
-
-! CDN / Infrastructure
-@@||cdn.koho.ca^
-@@||cdn.koho.com^
-@@||img.koho.ca^
-@@||static.koho.ca^
-
-! Wildcard
-@@||*.koho.com^
-@@||*.koho.ca^
-
-! ============================================
-! === AFFIRM (All Infrastructure) ===
-! ============================================
-
-@@||affirm.com^
-@@||affirm.ca^
-
-! API infrastructure
-@@||api.affirm.com^
-@@||api.affirm.ca^
-@@||checkout.affirm.com^
-
-! CDN / Assets
-@@||cdn.affirm.com^
-@@||static.affirm.com^
-@@||img.affirm.com^
-@@||d.affirm.com^
-@@||js.affirm.com^
-
-! Analytics / Tracking (required for Affirm to function)
-@@||analytics.affirm.com^
-@@||events.affirm.com^
-
-! Wildcard
-@@||*.affirm.com^
-@@||*.affirm.ca^
-
-! ============================================
-! === PAYMENT PROCESSORS (Required by banks/fintech) ===
-! ============================================
-
-! Stripe (used by Neo, Koho, Affirm, others)
-@@||stripe.com^
-@@||stripe.network^
-@@||stripe.cc^
-@@||api.stripe.com^
-@@||q.stripe.com^
-@@||js.stripe.com^
-@@||checkout.stripe.com^
-@@||api-ca.stripe.com^
-@@||*.stripe.com^
-
-! Adyen (backup processor)
-@@||adyen.com^
-@@||api.adyen.com^
-@@||*.adyen.com^
-
-! Square / Block
-@@||square.com^
-@@||api.square.com^
-@@||*.square.com^
-
-! ============================================
-! === PROTON AUTHENTICATOR ===
-! ============================================
-
-! Main API
-@@||protonmail.com^
-@@||proton.me^
-
-! Authentication endpoints
-@@||api.protonmail.com^
-@@||api.proton.me^
-@@||auth.proton.me^
-@@||auth-v2.proton.me^
-@@||auth-ca.proton.me^
-@@||auth-us.proton.me^
-
-! Authenticator specific
-@@||authenticator.proton.me^
-@@||api-authenticator.proton.me^
-
-! Regional endpoints (Canada)
-@@||mail-ca.proton.me^
-@@||vpn-ca.proton.me^
-@@||api-ca.proton.me^
-
-! OAuth / Session
-@@||oauth.proton.me^
-@@||session.proton.me^
-
-! CDN / Static assets
-@@||cdn.proton.me^
-@@||static.proton.me^
-@@||img.proton.me^
-
-! Mail endpoints
-@@||mail.proton.me^
-@@||mailbox.proton.me^
-
-! Wildcard
-@@||*.protonmail.com^
-@@||*.proton.me^
-
-! ============================================
-! === MICROSOFT AUTHENTICATOR & IDENTITY ===
-! ============================================
-
-! Login / Authentication
-@@||login.microsoft.com^
-@@||login.live.com^
-@@||account.microsoft.com^
-@@||account.live.com^
-@@||events.data.microsoft.com^
-
-! Azure AD / Identity
-@@||login.microsoftonline.com^
-@@||aad.msftauth.net^
-@@||aadcdn.msftauth.net^
-@@||msftauth.net^
-@@||*.msftauth.net^
-
-! Microsoft Graph (API backend)
-@@||graph.microsoft.com^
-@@||graph.microsoft.com^
-
-! OAuth / Token endpoints
-@@||oauth.microsoft.com^
-@@||token.microsoft.com^
-
-! Authenticator app
-@@||authenticator.microsoft.com^
-@@||mfa.microsoft.com^
-@@||aka.ms^
-
-! CDN / Assets
-@@||cdn.microsoft.com^
-@@||static.microsoft.com^
-@@||img-s-msn-com.akamaized.net^
-
-! Regional infrastructure
-@@||*.microsoft.com^
-@@||*.live.com^
-@@||*.microsoftonline.com^
-@@||*.msftauth.net^
-
-! ============================================
-! === SUPPORTING INFRASTRUCTURE ===
-! ============================================
-
-! CloudFlare (CDN used by many fintech)
-@@||cloudflare.com^
-@@||cdn.cloudflare.com^
-
-! Akamai (CDN used by RBC, banks)
-@@||akamai.com^
-@@||akamaized.net^
-@@||akamaitech.net^
-
-! AWS infrastructure (used by most fintech)
-@@||amazonaws.com^
-@@||cloudfront.net^
-@@||elasticloadbalancing.amazonaws.com^
-
-! Fastly (CDN)
-@@||fastly.com^
-@@||fastly.net^
-
-! Analytics / Monitoring (necessary for app stability)
-@@||braze.com^
-@@||segment.com^
-@@||sentry.io^
-
-! Certificate validation
-@@||ocsp.digicert.com^
-@@||crl.digicert.com^
-
-
-! --- Global Amazon Ad Network (Handles links & tracking) ---
-@@||amazon-adsystem.com^
-@@||aax.amazon-adsystem.com^
-@@||aax-us-east.amazon-adsystem.com^
-@@||aax-us-pdx.amazon-adsystem.com^
-@@||aax-eu.amazon-adsystem.com^
-@@||s.amazon-adsystem.com^
-@@||assoc-amazon.com^
-@@||mads.amazon-adsystem.com^
-
-! --- Regional Ad Redirection & DoubleClick Exceptions ---
-@@||ad.doubleclick.net^$domain=amazon.com|amazon.ca|amazon.in
-@@||fls-na.amazon.com^
-@@||fls-eu.amazon.com^
-@@||completion.amazon.com^
-@@||completion.amazon.in^
-
-! --- Mobile App Specific Endpoints ---
-@@||device-metrics-us-2.amazon.com^
-@@||device-metrics-us.amazon.com^
-@@||unagi-na.amazon.com^
-@@||unagi.amazon.com^
-@@||s3.amazonaws.com^$domain=amazon.ca|amazon.com|amazon.in
-@@||m.media-amazon.com^
-@@||images-na.ssl-images-amazon.com^
-
-! --- Mobile Ad Services & Content Delivery ---
-@@||aax-us.amazon-adsystem.com^
-@@||aax-fe.amazon-adsystem.com^
-@@||aax-eu.amazon-adsystem.com^
-@@||api.amazon.com^
-
-
-! ============================================
-! === NOTES ===
-! ============================================
-! This whitelist assumes:
-! 1. AdGuard DNS filter is your primary blocklist (160k rules)
-! 2. You have NOT enabled malware/phishing lists (URLhaus)
-! 3. Regional Canadian endpoints included
-! 4. Wildcard rules prevent future subdomain breakage
-! 5. Payment processors included (Stripe, Adyen, Square)
-! 6. CDN infrastructure whitelisted to prevent edge caching issues
-!
-! STILL INCOMPLETE FOR:
-! - Regional payment gateways (may need additions based on your usage)
-! - Specific retailer infrastructure (e.g., if Affirm is used on Shopify stores)
-! - Banking-specific security checks (anti-fraud services)
-!
-! ACTION: Export AdGuard query logs after 7 days. Compare blocked domains to this list.
-! Missing domains = update this list. Recurring misses = agent automation needed.
+adblock filter list
+1| [Adblock Plus 2.0]
+2| ! Title: Comprehensive Canadian Banking & Authenticator Whitelist
+3| ! Description: Complete whitelist for RBC, Neo Financial, Scotiabank, Koho, Affirm + Proton & Microsoft Authenticators
+4| ! Updated: 2026-08-14
+5| ! Coverage: Web, Mobile Apps, APIs, CDNs, Regional Infrastructure
+6| 
+7| ! ============================================
+8| ! === RBC ROYAL BANK OF CANADA (All Infrastructure) ===
+9| ! ============================================
+10| 
+11| ! Main domains
+12| @@||rbc.com^
+13| @@||rbc.ca^
+14| @@||rbcroyalbank.com^
+15| @@||rbcroyalbank.ca^
+16| @@||rbc.online-metrix.net^
+17| 
+18| ! Web banking
+19| @@||online.rbc.com^
+20| @@||online.rbc.ca^
+21| @@||secure.rbc.com^
+22| @@||secure.rbc.ca^
+23| 
+24| ! Mobile app infrastructure
+25| @@||mobile.rbc.com^
+26| @@||mobile.rbc.ca^
+27| @@||app.rbc.com^
+28| @@||app.rbc.ca^
+29| 
+30| ! API endpoints
+31| @@||api.rbc.com^
+32| @@||api.rbc.ca^
+33| @@||api-ca.rbc.ca^
+34| @@||secure-api.rbc.com^
+35| @@||secure-api.rbc.ca^
+36| 
+37| ! RBC Digital / Investment platforms
+38| @@||rbcdigital.com^
+39| @@||rbcdigital.ca^
+40| @@||rbcinvest.ca^
+41| @@||rbcgam.com^
+42| 
+43| ! Cards / Credit
+44| @@||cards.rbc.com^
+45| @@||cards.rbc.ca^
+46| @@||credit.rbc.ca^
+47| @@||rbccard.com^
+48| @@||rbccard.ca^
+49| 
+50| ! CDN / Infrastructure (Akamai, Cloudflare)
+51| @@||rbc-cdn.com^
+52| @@||rbc-cdn.ca^
+53| @@||d.rbc.ca^
+54| @@||cdn-rbc.ca^
+55| @@||*.rbc-cdn.com^
+56| @@||*.rbc-cdn.ca^
+57| 
+58| ! Wildcard for all RBC subdomains
+59| @@||*.rbc.com^
+60| @@||*.rbc.ca^
+61| @@||*.rbcroyalbank.com^
+62| @@||*.rbcroyalbank.ca^
+63| 
+64| ! ============================================
+65| ! === NEO FINANCIAL (All Infrastructure) ===
+66| ! ============================================
+67| 
+68| @@||neofinancial.com^
+69| @@||neo.cc^
+70| 
+71| ! App infrastructure
+72| @@||api.neofinancial.com^
+73| @@||api-ca.neofinancial.com^
+74| @@||app.neofinancial.com^
+75| @@||mobile.neofinancial.com^
+76| @@||mobile.neo.cc^
+77| 
+78| ! Web banking
+79| @@||login.neofinancial.com^
+80| @@||secure.neofinancial.com^
+81| @@||online.neofinancial.com^
+82| 
+83| ! CDN / Infrastructure
+84| @@||cdn.neofinancial.com^
+85| @@||img.neofinancial.com^
+86| 
+87| ! Wildcard
+88| @@||*.neofinancial.com^
+89| @@||*.neo.cc^
+90| 
+91| ! ============================================
+92| ! === SCOTIABANK (All Infrastructure) ===
+93| ! ============================================
+94| 
+95| @@||scotiabank.com^
+96| @@||scotiabank.ca^
+97| @@||scotiabank.co.uk^
+98| 
+99| ! Web banking
+100| @@||online.scotiabank.com^
+101| @@||online.scotiabank.ca^
+102| @@||secure.scotiabank.ca^
+103| @@||mybank.scotiabank.com^
+104| @@||mybank.scotiabank.ca^
+105| 
+106| ! Mobile app infrastructure
+107| @@||mobile.scotiabank.com^
+108| @@||mobile.scotiabank.ca^
+109| @@||app.scotiabank.ca^
+110| @@||mobilebanking.scotiabank.ca^
+111| 
+112| ! API endpoints
+113| @@||api.scotiabank.com^
+114| @@||api.scotiabank.ca^
+115| @@||api-ca.scotiabank.ca^
+116| @@||banking-api.scotiabank.ca^
+117| 
+118| ! Investment / Credit
+119| @@||scotiainvestments.com^
+120| @@||scotiainvest.ca^
+121| @@||mortgages.scotiabank.ca^
+122| @@||credit.scotiabank.ca^
+123| 
+124| ! CDN / Infrastructure
+125| @@||cdn.scotiabank.ca^
+126| @@||static.scotiabank.ca^
+127| @@||img.scotiabank.ca^
+128| 
+129| ! Wildcard
+130| @@||*.scotiabank.com^
+131| @@||*.scotiabank.ca^
+132| 
+133| ! ============================================
+134| ! === KOHO (All Infrastructure) ===
+135| ! ============================================
+136| 
+137| @@||koho.com^
+138| @@||koho.ca^
+139| 
+140| ! App infrastructure
+141| @@||api.koho.com^
+142| @@||api.koho.ca^
+143| @@||app.koho.ca^
+144| @@||mobile.koho.ca^
+145| @@||app-api.koho.ca^
+146| 
+147| ! Web/Login
+148| @@||login.koho.ca^
+149| @@||login.koho.com^
+150| @@||secure.koho.ca^
+151| @@||web.koho.ca^
+152| 
+153| ! CDN / Infrastructure
+154| @@||cdn.koho.ca^
+155| @@||cdn.koho.com^
+156| @@||img.koho.ca^
+157| @@||static.koho.ca^
+158| 
+159| ! Wildcard
+160| @@||*.koho.com^
+161| @@||*.koho.ca^
+162| 
+163| ! ============================================
+164| ! === AFFIRM (All Infrastructure) ===
+165| ! ============================================
+166| 
+167| @@||affirm.com^
+168| @@||affirm.ca^
+169| 
+170| ! API infrastructure
+171| @@||api.affirm.com^
+172| @@||api.affirm.ca^
+173| @@||checkout.affirm.com^
+174| 
+175| ! CDN / Assets
+176| @@||cdn.affirm.com^
+177| @@||static.affirm.com^
+178| @@||img.affirm.com^
+179| @@||d.affirm.com^
+180| @@||js.affirm.com^
+181| 
+182| ! Analytics / Tracking (required for Affirm to function)
+183| @@||analytics.affirm.com^
+184| @@||events.affirm.com^
+185| 
+186| ! Wildcard
+187| @@||*.affirm.com^
+188| @@||*.affirm.ca^
+189| 
+190| ! ============================================
+191| ! === PAYMENT PROCESSORS (Required by banks/fintech) ===
+192| ! ============================================
+193| 
+194| ! Stripe (used by Neo, Koho, Affirm, others)
+195| @@||stripe.com^
+196| @@||stripe.network^
+197| @@||stripe.cc^
+198| @@||api.stripe.com^
+199| @@||q.stripe.com^
+200| @@||js.stripe.com^
+201| @@||checkout.stripe.com^
+202| @@||api-ca.stripe.com^
+203| @@||*.stripe.com^
+204| 
+205| ! Adyen (backup processor)
+206| @@||adyen.com^
+207| @@||api.adyen.com^
+208| @@||*.adyen.com^
+209| 
+210| ! Square / Block
+211| @@||square.com^
+212| @@||api.square.com^
+213| @@||*.square.com^
+214| 
+215| ! ============================================
+216| ! === PROTON AUTHENTICATOR ===
+217| ! ============================================
+218| 
+219| ! Main API
+220| @@||protonmail.com^
+221| @@||proton.me^
+222| 
+223| ! Authentication endpoints
+224| @@||api.protonmail.com^
+225| @@||api.proton.me^
+226| @@||auth.proton.me^
+227| @@||auth-v2.proton.me^
+228| @@||auth-ca.proton.me^
+229| @@||auth-us.proton.me^
+230| 
+231| ! Authenticator specific
+232| @@||authenticator.proton.me^
+233| @@||api-authenticator.proton.me^
+234| 
+235| ! Regional endpoints (Canada)
+236| @@||mail-ca.proton.me^
+237| @@||vpn-ca.proton.me^
+238| @@||api-ca.proton.me^
+239| 
+240| ! OAuth / Session
+241| @@||oauth.proton.me^
+242| @@||session.proton.me^
+243| 
+244| ! CDN / Static assets
+245| @@||cdn.proton.me^
+246| @@||static.proton.me^
+247| @@||img.proton.me^
+248| 
+249| ! Mail endpoints
+250| @@||mail.proton.me^
+251| @@||mailbox.proton.me^
+252| 
+253| ! Wildcard
+254| @@||*.protonmail.com^
+255| @@||*.proton.me^
+256| 
+257| ! ============================================
+258| ! === MICROSOFT AUTHENTICATOR & IDENTITY ===
+259| ! ============================================
+260| 
+261| ! Login / Authentication
+262| @@||login.microsoft.com^
+263| @@||login.live.com^
+264| @@||account.microsoft.com^
+265| @@||account.live.com^
+266| @@||events.data.microsoft.com^
+267| 
+268| ! Azure AD / Identity
+269| @@||login.microsoftonline.com^
+270| @@||aad.msftauth.net^
+271| @@||aadcdn.msftauth.net^
+272| @@||msftauth.net^
+273| @@||*.msftauth.net^
+274| 
+275| ! Microsoft Graph (API backend)
+276| @@||graph.microsoft.com^
+277| @@||graph.microsoft.com^
+278| 
+279| ! OAuth / Token endpoints
+280| @@||oauth.microsoft.com^
+281| @@||token.microsoft.com^
+282| 
+283| ! Authenticator app
+284| @@||authenticator.microsoft.com^
+285| @@||mfa.microsoft.com^
+286| @@||aka.ms^
+287| 
+288| ! CDN / Assets
+289| @@||cdn.microsoft.com^
+290| @@||static.microsoft.com^
+291| @@||img-s-msn-com.akamaized.net^
+292| 
+293| ! Regional infrastructure
+294| @@||*.microsoft.com^
+295| @@||*.live.com^
+296| @@||*.microsoftonline.com^
+297| @@||*.msftauth.net^
+298| 
+299| ! ============================================
+300| ! === SUPPORTING INFRASTRUCTURE ===
+301| ! ============================================
+302| 
+303| ! CloudFlare (CDN used by many fintech)
+304| @@||cloudflare.com^
+305| @@||cdn.cloudflare.com^
+306| 
+307| ! Akamai (CDN used by RBC, banks)
+308| @@||akamai.com^
+309| @@||akamaized.net^
+310| @@||akamaitech.net^
+311| 
+312| ! AWS infrastructure (used by most fintech)
+313| @@||amazonaws.com^
+314| @@||cloudfront.net^
+315| @@||elasticloadbalancing.amazonaws.com^
+316| 
+317| ! Fastly (CDN)
+318| @@||fastly.com^
+319| @@||fastly.net^
+320| 
+321| ! Analytics / Monitoring (necessary for app stability)
+322| @@||braze.com^
+323| @@||segment.com^
+324| @@||sentry.io^
+325| 
+326| ! Certificate validation
+327| @@||ocsp.digicert.com^
+328| @@||crl.digicert.com^
+329| 
+330| 
+331| ! --- Global Amazon Ad Network (Handles links & tracking) ---
+332| @@||amazon-adsystem.com^
+333| @@||aax.amazon-adsystem.com^
+334| @@||aax-us-east.amazon-adsystem.com^
+335| @@||aax-us-pdx.amazon-adsystem.com^
+336| @@||aax-eu.amazon-adsystem.com^
+337| @@||s.amazon-adsystem.com^
+338| @@||assoc-amazon.com^
+339| @@||mads.amazon-adsystem.com^
+340| 
+341| ! --- Regional Ad Redirection & DoubleClick Exceptions ---
+342| @@||ad.doubleclick.net^$domain=amazon.com|amazon.ca|amazon.in
+343| @@||fls-na.amazon.com^
+344| @@||fls-eu.amazon.com^
+345| @@||completion.amazon.com^
+346| @@||completion.amazon.in^
+347| 
+348| ! --- Mobile App Specific Endpoints ---
+349| @@||device-metrics-us-2.amazon.com^
+350| @@||device-metrics-us.amazon.com^
+351| @@||unagi-na.amazon.com^
+352| @@||unagi.amazon.com^
+353| @@||s3.amazonaws.com^$domain=amazon.ca|amazon.com|amazon.in
+354| @@||m.media-amazon.com^
+355| @@||images-na.ssl-images-amazon.com^
+356| 
+357| ! --- Mobile Ad Services & Content Delivery ---
+358| @@||aax-us.amazon-adsystem.com^
+359| @@||aax-fe.amazon-adsystem.com^
+360| @@||aax-eu.amazon-adsystem.com^
+361| @@||api.amazon.com^
+362| 
+363| 
+364| ! ============================================
+365| ! === NOTES ===
+366| ! ============================================
+367| ! This whitelist assumes:
+368| ! 1. AdGuard DNS filter is your primary blocklist (160k rules)
+369| ! 2. You have NOT enabled malware/phishing lists (URLhaus)
+370| ! 3. Regional Canadian endpoints included
+371| ! 4. Wildcard rules prevent future subdomain breakage
+372| ! 5. Payment processors included (Stripe, Adyen, Square)
+373| ! 6. CDN infrastructure whitelisted to prevent edge caching issues
+374| !
+375| ! STILL INCOMPLETE FOR:
+376| ! - Regional payment gateways (may need additions based on your usage)
+377| ! - Specific retailer infrastructure (e.g., if Affirm is used on Shopify stores)
+378| ! - Banking-specific security checks (anti-fraud services)
+379| !
+380| ! ACTION: Export AdGuard query logs after 7 days. Compare blocked domains to this list.
+381| ! Missing domains = update this list. Recurring misses = agent automation needed.
+382| 
