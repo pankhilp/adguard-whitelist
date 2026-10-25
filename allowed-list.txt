@@ -329,62 +329,74 @@ adblock filter list
 328| @@||crl.digicert.com^
 329| 
 330| 
-331| ! --- Global Amazon Ad Network (Handles links & tracking) ---
-332| @@||amazon-adsystem.com^
-333| @@||aax.amazon-adsystem.com^
-334| @@||aax-us-east.amazon-adsystem.com^
-335| @@||aax-us-pdx.amazon-adsystem.com^
-336| @@||aax-eu.amazon-adsystem.com^
-337| @@||s.amazon-adsystem.com^
-338| @@||assoc-amazon.com^
-339| @@||mads.amazon-adsystem.com^
-340| 
-341| ! --- Regional Ad Redirection & DoubleClick Exceptions ---
-342| @@||ad.doubleclick.net^$domain=amazon.com|amazon.ca|amazon.in
-343| @@||fls-na.amazon.com^
-344| @@||fls-eu.amazon.com^
-345| @@||completion.amazon.com^
-346| @@||completion.amazon.in^
-347| 
-348| ! --- Mobile App Specific Endpoints ---
-349| @@||device-metrics-us-2.amazon.com^
-350| @@||device-metrics-us.amazon.com^
-351| @@||unagi-na.amazon.com^
-352| @@||unagi.amazon.com^
-353| @@||s3.amazonaws.com^$domain=amazon.ca|amazon.com|amazon.in
-354| @@||m.media-amazon.com^
-355| @@||images-na.ssl-images-amazon.com^
-356| 
-357| ! --- Mobile Ad Services & Content Delivery ---
-358| @@||aax-us.amazon-adsystem.com^
-359| @@||aax-fe.amazon-adsystem.com^
-360| @@||aax-eu.amazon-adsystem.com^
-361| @@||api.amazon.com^
-362| 
-363| ! ============================================
-364| ! === STARTPAGE SEARCH ===
-365| ! ============================================
-366| ! Search engine and related front-end domains
-367| @@||startpage.com^
-368| @@||www.startpage.com^
-369| @@||*.startpage.com^
-370| 
-371| ! ============================================
-372| ! === NOTES ===
-373| ! ============================================
-374| ! This whitelist assumes:
-375| ! 1. AdGuard DNS filter is your primary blocklist (160k rules)
-376| ! 2. You have NOT enabled malware/phishing lists (URLhaus)
-377| ! 3. Regional Canadian endpoints included
-378| ! 4. Wildcard rules prevent future subdomain breakage
-379| ! 5. Payment processors included (Stripe, Adyen, Square)
-380| ! 6. CDN infrastructure whitelisted to prevent edge caching issues
-381| !
-382| ! STILL INCOMPLETE FOR:
-383| ! - Regional payment gateways (may need additions based on your usage)
-384| ! - Specific retailer infrastructure (e.g., if Affirm is used on Shopify stores)
-385| ! - Banking-specific security checks (anti-fraud services)
-386| !
-387| ! ACTION: Export AdGuard query logs after 7 days. Compare blocked domains to this list.
-388| ! Missing domains = update this list. Recurring misses = agent automation needed.
-389| 
+331| ! --- Amazon storefronts, redirects, and sponsored links ---
+332| @@||amazon.com^
+333| @@||www.amazon.com^
+334| @@||amazon.ca^
+335| @@||www.amazon.ca^
+336| @@||amazon.in^
+337| @@||www.amazon.in^
+338| @@||amzn.to^
+339| @@||*.amazon.com^
+340| @@||*.amazon.ca^
+341| @@||*.amazon.in^
+342| 
+343| ! --- Global Amazon Ad Network (Handles links & tracking) ---
+344| @@||amazon-adsystem.com^
+345| @@||aax.amazon-adsystem.com^
+346| @@||aax-us-east.amazon-adsystem.com^
+347| @@||aax-us-pdx.amazon-adsystem.com^
+348| @@||aax-eu.amazon-adsystem.com^
+349| @@||s.amazon-adsystem.com^
+350| @@||assoc-amazon.com^
+351| @@||mads.amazon-adsystem.com^
+352| 
+353| ! --- Regional Ad Redirection & DoubleClick Exceptions ---
+354| @@||ad.doubleclick.net^$domain=amazon.com|amazon.ca|amazon.in
+355| @@||fls-na.amazon.com^
+356| @@||fls-eu.amazon.com^
+357| @@||completion.amazon.com^
+358| @@||completion.amazon.in^
+359| 
+360| ! --- Mobile App Specific Endpoints ---
+361| @@||device-metrics-us-2.amazon.com^
+362| @@||device-metrics-us.amazon.com^
+363| @@||unagi-na.amazon.com^
+364| @@||unagi.amazon.com^
+365| @@||s3.amazonaws.com^$domain=amazon.ca|amazon.com|amazon.in
+366| @@||m.media-amazon.com^
+367| @@||images-na.ssl-images-amazon.com^
+368| 
+369| ! --- Mobile Ad Services & Content Delivery ---
+370| @@||aax-us.amazon-adsystem.com^
+371| @@||aax-fe.amazon-adsystem.com^
+372| @@||aax-eu.amazon-adsystem.com^
+373| @@||api.amazon.com^
+374| 
+375| ! ============================================
+376| ! === STARTPAGE SEARCH ===
+377| ! ============================================
+378| ! Search engine and related front-end domains
+379| @@||startpage.com^
+380| @@||www.startpage.com^
+381| @@||*.startpage.com^
+382| 
+383| ! ============================================
+384| ! === NOTES ===
+385| ! ============================================
+386| ! This whitelist assumes:
+387| ! 1. AdGuard DNS filter is your primary blocklist (160k rules)
+388| ! 2. You have NOT enabled malware/phishing lists (URLhaus)
+389| ! 3. Regional Canadian endpoints included
+390| ! 4. Wildcard rules prevent future subdomain breakage
+391| ! 5. Payment processors included (Stripe, Adyen, Square)
+392| ! 6. CDN infrastructure whitelisted to prevent edge caching issues
+393| !
+394| ! STILL INCOMPLETE FOR:
+395| ! - Regional payment gateways (may need additions based on your usage)
+396| ! - Specific retailer infrastructure (e.g., if Affirm is used on Shopify stores)
+397| ! - Banking-specific security checks (anti-fraud services)
+398| !
+399| ! ACTION: Export AdGuard query logs after 7 days. Compare blocked domains to this list.
+400| ! Missing domains = update this list. Recurring misses = agent automation needed.
+401| 
