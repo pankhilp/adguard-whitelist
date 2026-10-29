@@ -318,6 +318,12 @@
 ! Apple Push Notifications
 @@||push.apple.com^
 
+! iCloud Private Relay
+@@||mask.icloud.com^
+@@||mask-h2.icloud.com^
+@@||mask-api.icloud.com^
+@@||mask.apple-dns.net^
+
 ! CloudFlare (CDN used by many fintech)
 @@||cloudflare.com^
 @@||cdn.cloudflare.com^
