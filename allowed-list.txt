@@ -342,6 +342,16 @@
 @@||fastly.com^
 @@||fastly.net^
 
+! Google Analytics / GTM (required for analytics & measurement)
+@@||google-analytics.com^
+@@||www.google-analytics.com^
+@@||ssl.google-analytics.com^
+@@||*.google-analytics.com^
+@@||googleanalytics.com^
+@@||googletagmanager.com^
+@@||www.googletagmanager.com^
+@@||*.googletagmanager.com^
+
 ! Analytics / Monitoring (necessary for app stability)
 @@||braze.com^
 @@||segment.com^
